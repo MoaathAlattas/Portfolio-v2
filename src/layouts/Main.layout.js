@@ -1,23 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import {Helmet} from "react-helmet"
-import Navbar from '@components/Navbar'
-import Div from "@components/utils/Div"
+import { Toggle } from 'react-powerplug'
+import { AppSidebar } from "@components/ui"
+import { Segment, Sidebar } from 'semantic-ui-react'
 
-
-const Main = ({children, pageTitle}) =>(
-<Div>
-    <Helmet>
-        <title>{pageTitle}</title>
-    </Helmet>
-    <Navbar />
-    {children}
-</Div>
+const Main = ({children}) =>(
+<div style={{height: '100vh'}}>
+    <Toggle initial={true}>
+    {({ on, toggle }) => (
+        <Sidebar.Pushable>   
+            <AppSidebar open={on} OnToggle={toggle} />
+            <Sidebar.Pusher >
+                <Segment basic style={{ height: '94.2vh'}}>
+                    {children}
+                </Segment>
+            </Sidebar.Pusher>
+        </Sidebar.Pushable>    
+    )}
+</Toggle>  
+</div>
 )
 
-Main.propTypes ={
-    children: PropTypes.node.isRequired,
-    pageTitle: PropTypes.string.isRequired
+Main.propTypes = {
+    children: PropTypes.node.isRequired
 }
 
 export default Main

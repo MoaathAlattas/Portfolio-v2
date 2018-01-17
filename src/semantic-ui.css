@@ -1,0 +1,9 @@
+@import '../node_modules/semantic-ui-css/components/site.css';
+@import '../node_modules/semantic-ui-css/components/reset.css';
+@import '../node_modules/semantic-ui-css/components/transition.css';
+@import '../node_modules/semantic-ui-css/components/form.css';
+@import '../node_modules/semantic-ui-css/components/label.css';
+@import '../node_modules/semantic-ui-css/components/icon.css'; 
+
+@import '../node_modules/semantic-ui-css/components/dropdown.css';
+@import '../node_modules/semantic-ui-css/components/sidebar.css';

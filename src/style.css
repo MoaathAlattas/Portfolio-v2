@@ -1,0 +1,9 @@
+* {
+    --sidebar-width-open:218px;
+    --sidebar-width-closed:100px;
+}
+
+/* Semantic ui Sidebar */
+.pushable>.pusher{
+    min-height: initial;
+}

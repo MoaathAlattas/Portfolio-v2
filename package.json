@@ -4,8 +4,8 @@
   "description": "Parcel and React Boilerplate",
   "main": "x.js",
   "scripts": {
-    "start": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html -d ./public --no-cache --public-url ./"
+    "start": "parcel ./src/index.html --no-cache",
+    "build": "parcel build ./src/index.html -d ./public --public-url ./ --no-cache"
   },
   "author": "Moaath Alattas",
   "license": "ISC",
@@ -17,12 +17,16 @@
     "react-loadable": "^5.3.1",
     "react-powerplug": "^0.1.2",
     "react-router-dom": "^4.2.2",
-    "recompose": "^0.26.0"
+    "recompose": "^0.26.0",
+    "semantic-ui-css": "^2.2.12",
+    "semantic-ui-react": "^0.77.2"
   },
   "devDependencies": {
+    "babel-plugin-lodash": "^3.3.2",
     "babel-plugin-module-resolver": "^3.0.0",
     "babel-plugin-system-import-transformer": "^3.1.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "parcel-bundler": "^1.4.1"
@@ -35,7 +39,16 @@
     "plugins": [
       "syntax-dynamic-import",
       "transform-class-properties",
-      "transform-object-assign",
+      "transform-object-rest-spread",
+      [
+        "lodash",
+        {
+          "id": [
+            "lodash",
+            "semantic-ui-react"
+          ]
+        }
+      ],
       [
         "module-resolver",
         {
@@ -45,7 +58,8 @@
           "alias": {
             "@components": "./src/components",
             "@layouts": "./src/layouts",
-            "@views": "./src/views"
+            "@views": "./src/views",
+            "@config": "./src/config.js"
           }
         }
       ]
