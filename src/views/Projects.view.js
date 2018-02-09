@@ -1,13 +1,12 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { ViewTitle } from '@components/ui'
-import { Div } from '@components/utils'
 import { Project } from '@components'
 
 const ProjectsView = () => (
-  <Div>
+  <Fragment>
     <ViewTitle content="Projects" />
     <Project items={{}} />
-  </Div>
+  </Fragment>
 )
 
 export default ProjectsView

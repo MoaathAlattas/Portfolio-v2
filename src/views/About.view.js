@@ -1,11 +1,10 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Segment } from 'semantic-ui-react'
 import { ViewTitle, SubTitle } from '@components/ui'
-import { Div } from '@components/utils'
 import { Education, Experience, Skills } from '@components'
 
-const AboutView = props => (
-  <Div>
+const AboutView = () => (
+  <Fragment>
     <ViewTitle content="About" />
     <Segment>
       <p>Text Text Text</p>
@@ -25,7 +24,7 @@ const AboutView = props => (
       <SubTitle content="Technical Skills" />
       <Skills items={{}} />
     </Segment>
-  </Div>
+  </Fragment>
 )
 
 export default AboutView

@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+      "target": "es2017",
+      "baseUrl": ".",
+      "paths": {
+        "@components/*": ["./src/components/*"],
+        "@layouts": ["./src/layouts/*"],
+        "@views": ["./src/views/*"],
+      }
+    },
+    "exclude": [
+      "node_modules", 
+      "dist", 
+      ".cache", 
+      ".vscode", 
+      "dist",
+      "public"]
+}
