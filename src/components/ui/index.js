@@ -4,10 +4,4 @@ import AppSidebar from './Sidebar'
 import SubTitle from './SubTitle'
 import ViewTitle from './ViewTitle'
 
-export {
-    Logo,
-    AppMenu,
-    AppSidebar,
-    SubTitle,
-    ViewTitle
-}
+export { Logo, AppMenu, AppSidebar, SubTitle, ViewTitle }

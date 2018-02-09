@@ -5,5 +5,9 @@
 @import '../node_modules/semantic-ui-css/components/label.css';
 @import '../node_modules/semantic-ui-css/components/icon.css'; 
 
-@import '../node_modules/semantic-ui-css/components/dropdown.css';
+@import '../node_modules/semantic-ui-css/components/grid.css';
+
 @import '../node_modules/semantic-ui-css/components/sidebar.css';
+@import '../node_modules/semantic-ui-css/components/menu.css';
+@import '../node_modules/semantic-ui-css/components/segment.css';
+@import '../node_modules/semantic-ui-css/components/button.css';

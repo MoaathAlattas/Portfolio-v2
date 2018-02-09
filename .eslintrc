@@ -1,0 +1,37 @@
+{
+    "parser": "babel-eslint",
+    "plugins": [
+      "react",
+      "prettier"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended",
+      "prettier",
+      "prettier/react"
+    ],
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "rules": {
+      "no-console": 0,
+      "no-underscore-dangle": 0,
+      "quotes": [
+        2,
+        "single",
+        {
+          "avoidEscape": true,
+          "allowTemplateLiterals": true
+        }
+      ],
+      "prettier/prettier": [
+        "warn",
+        {
+          "singleQuote": true,
+          "semi": false,
+          "printWidth": 150
+        }
+      ]
+    }
+  }

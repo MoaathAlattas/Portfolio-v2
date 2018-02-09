@@ -1,0 +1,35 @@
+{
+    "presets": [
+      "env",
+      "react"
+    ],
+    "plugins": [
+      "syntax-dynamic-import",
+      "transform-class-properties",
+      "react-hot-loader/babel",
+      "transform-object-rest-spread",
+      [
+        "lodash",
+        {
+          "id": [
+            "lodash",
+            "semantic-ui-react"
+          ]
+        }
+      ],
+      [
+        "module-resolver",
+        {
+          "root": [
+            "./"
+          ],
+          "alias": {
+            "@components": "./src/components",
+            "@layouts": "./src/layouts",
+            "@views": "./src/views",
+            "@config": "./src/config.js"
+          }
+        }
+      ]
+    ]
+  }

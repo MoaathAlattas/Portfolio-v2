@@ -5,11 +5,4 @@ import Project from './project'
 import ProjectDetails from './ProjectDetails'
 import Skills from './Skills'
 
-export {
-    ContactForm,
-    Education,
-    Experience,
-    Project,
-    ProjectDetails,
-    Skills
-}
+export { ContactForm, Education, Experience, Project, ProjectDetails, Skills }

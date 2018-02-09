@@ -1,5 +1,3 @@
 import MainLayout from './Main.layout'
 
-export {
-    MainLayout
-}
+export { MainLayout }

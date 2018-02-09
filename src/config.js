@@ -1,5 +1,7 @@
 export default {
-    title:'Moaath Alattas',
-    lang:'en',
-    color:'purple'
+  title: 'Moaath Alattas',
+  name: 'Moaath Alattas',
+  jobTitle: 'Web Developer & Designer',
+  lang: 'en',
+  color: 'purple'
 }
