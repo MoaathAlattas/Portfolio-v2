@@ -7,7 +7,7 @@ const Logo = ({ img, name, jobTitle }) => (
     {img && <Image src={img} style={css.img} size="small" centered spaced circular />}
     <div style={css.nameTitleWrapper}>
       <h1 style={css.name}>{name}</h1>
-      <h3 style={css.jobTitle}>{jobTitle}</h3>
+      <h4 style={css.jobTitle}>{jobTitle}</h4>
     </div>
   </div>
 )

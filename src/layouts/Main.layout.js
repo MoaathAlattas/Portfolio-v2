@@ -25,6 +25,7 @@ let css = {
     padding: '0'
   },
   ColumnContent: {
+    padding: '10px 0',
     height: '100vh',
     backgroundColor: '#f2f2f2',
     overflow: 'auto'
