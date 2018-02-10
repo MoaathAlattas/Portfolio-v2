@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import { Menu, Icon, Responsive, Button } from 'semantic-ui-react'
+import { Menu, Responsive, Button } from 'semantic-ui-react'
 
 class AppMenu extends React.Component {
   state = {
@@ -12,13 +13,13 @@ class AppMenu extends React.Component {
     this.setState({ open: isMobile ? false : true })
   }
 
-  onToggle = () => this.setState((prevState, props) => ({ open: !prevState.open }))
+  onToggle = () => this.setState(prevState => ({ open: !prevState.open }))
 
   render() {
     return (
-      <Responsive onUpdate={this.onScreenSizeUpdate} fireOnMount as={React.Fragment}>
-        <Responsive {...Responsive.onlyMobile} as={React.Fragment}>
-          <Button icon="list" onClick={this.onToggle} />
+      <Responsive onUpdate={this.onScreenSizeUpdate} fireOnMount as={Fragment}>
+        <Responsive {...Responsive.onlyMobile} as={Fragment}>
+          <Button icon="list" onClick={this.onToggle} style={css.menuButton} />
         </Responsive>
 
         {this.state.open && (
@@ -31,6 +32,18 @@ class AppMenu extends React.Component {
       </Responsive>
     )
   }
+}
+
+let css = {
+  menuButton: {
+    position: 'absolute',
+    top: '0',
+    right: '0'
+  }
+}
+
+AppMenu.propTypes = {
+  color: PropTypes.string.isRequired
 }
 
 export default AppMenu

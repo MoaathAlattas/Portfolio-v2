@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Loadable from 'react-loadable'
-import { RouteWithLayout, Loading } from '@components/utils'
+import { Loading } from '@components/utils'
 
 import { MainLayout } from '@layouts'
 
@@ -11,9 +11,11 @@ const ContactView = Loadable({ loader: () => import('@views/Contact.view'), load
 
 const Routes = () => (
   <Switch>
-    <RouteWithLayout exact path="/" title="About" component={AboutView} layout={MainLayout} />
-    <RouteWithLayout path="/projects" title="Projects" component={ProjectsView} layout={MainLayout} />
-    <RouteWithLayout path="/contact" title="Contact" component={ContactView} layout={MainLayout} />
+    <MainLayout>
+      <Route exact path="/" component={AboutView} />
+      <Route path="/projects" component={ProjectsView} />
+      <Route path="/contact" component={ContactView} />
+    </MainLayout>
   </Switch>
 )
 

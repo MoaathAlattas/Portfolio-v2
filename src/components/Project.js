@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const project = ({ items }) => <div>projects list</div>
+const project = () => <div>Projects list</div>
 
-project.proptoType = {
+project.protoType = {
   items: PropTypes.object.isRequired
 }
 
