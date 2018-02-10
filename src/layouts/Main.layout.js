@@ -21,15 +21,13 @@ const Main = ({ children }) => (
 
 let css = {
   grid: {},
-  row: {
-    padding: '0'
-  },
   ColumnSideBar: {
     padding: '0'
   },
   ColumnContent: {
     height: '100vh',
-    backgroundColor: '#f2f2f2'
+    backgroundColor: '#f2f2f2',
+    overflow: 'auto'
   }
 }
 

@@ -31,6 +31,7 @@ const AboutView = () => (
         <Skills items={{}} />
       </Segment>
     </div>
+    <div style={{ height: '4000px' }} />
   </Fragment>
 )
 
