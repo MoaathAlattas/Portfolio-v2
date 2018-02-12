@@ -24,9 +24,12 @@ class AppMenu extends React.Component {
 
         {this.state.open && (
           <Menu vertical compact fluid color={this.props.color} inverted>
-            <Menu.Item name="user" icon="user" content="About" as={Link} to="/" />
-            <Menu.Item name="picture" icon="picture" content="Projects" as={Link} to="/projects" />
-            <Menu.Item name="user" icon="envelope" content="Contact" as={Link} to="/contact" />
+            {this.props.items.map((item, i) => (
+              <Menu.Item key={i} name={item.title} content={item.title} icon={item.icon} to={item.link} as={Link} />
+            ))}
+
+            <Menu.Item content="عربي" as={Link} to="/ar" />
+            <Menu.Item content="English" as={Link} to="/" />
           </Menu>
         )}
       </Responsive>
@@ -43,7 +46,8 @@ let css = {
 }
 
 AppMenu.propTypes = {
-  color: PropTypes.string.isRequired
+  color: PropTypes.string.isRequired,
+  items: PropTypes.array.isRequired
 }
 
 export default AppMenu

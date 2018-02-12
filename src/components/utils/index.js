@@ -1,3 +1,4 @@
 import Loading from './Loading'
+import RouteEnhanced from './RouteEnhanced'
 
-export { Loading }
+export { Loading, RouteEnhanced }

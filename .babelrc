@@ -27,7 +27,7 @@
             "@components": "./src/components",
             "@layouts": "./src/layouts",
             "@views": "./src/views",
-            "@config": "./src/config.js"
+            "@data": "./data/"
           }
         }
       ]

@@ -1,0 +1,106 @@
+{
+    "en":{
+        "title":"About",
+        "content":"Web <strong>developer</strong> and <strong>designer</strong> currently based in Winnipeg, <strong>Canada</strong>. I enjoy designing and coding and I am passionate about Front-End development.",
+        "education":{
+        "title":"education",
+        "items":[
+                {
+                    "icon": "university",
+                    "title": "Bachelor in Applied Computer Science",
+                    "description": "University of Winnipeg"
+                },
+                {
+                    "icon": "university",
+                    "title": "Bachelor in Applied Computer Science",
+                    "description": "University of Winnipeg"
+                }
+            ]
+        },
+        "experience":{
+        "title":"experience",
+        "items":[
+            {
+                "icon": "circle outline",
+                "title": "Investors Group",
+                "description":
+                  "Assisting with data quality investigation, data quality assurance, and transitioning legacy database reporting into the enterprise data environment."
+              },
+              {
+                "icon": "circle outline",
+                "title": "Freelancing",
+                "description": "Involved in multiple Front-End projects using different tools and technologies."
+              },
+              {
+                "icon": "circle outline",
+                "title": "phpBB Support Team",
+                "description":
+                  "I was part of the support team of an open source forum software, phpBB. My role was helping the community with template related problems as well as designing and coding production ready templates."
+              }
+        ]},
+        "skills":{
+        "title":"skills",
+        "items":[
+            {
+            "icon": "terminal",
+            "title": "Languages",
+            "list": ["HTML5", "CSS3", "JavaScript/Node.js (ES)", "PHP"]
+            },
+            {
+            "icon": "options",
+            "title": "Frameworks & CMS",
+            "list": ["Express js", "Angular", "Meteor", "WordPress", "phpBB"]
+            }
+        ]}
+    },
+
+    "ar":{
+        "title":"عنّي",
+        "content":"نص نص نص نص نص نص نص نص نص نص نص نص نص نص نص نص نص نص نص نص نص نص",
+        "education":{
+        "title":"التعليم",
+        "items":[
+            {
+                "icon": "university",
+                "title": "باكالوريوس علوم حاسب تطببقية",
+                "description": "University of Winnipeg"
+            }
+        ]
+    },
+        "experience":{
+        "title":"الخبرات",
+        "items":[
+            {
+                "icon": "circle outline",
+                "title": "Investors Group",
+                "description":
+                  "Assisting with data quality investigation, data quality assurance, and transitioning legacy database reporting into the enterprise data environment."
+              },
+              {
+                "icon": "circle outline",
+                "title": "Freelancing",
+                "description": "Involved in multiple Front-End projects using different tools and technologies."
+              },
+              {
+                "icon": "circle outline",
+                "title": "phpBB Support Team",
+                "description":
+                  "I was part of the support team of an open source forum software, phpBB. My role was helping the community with template related problems as well as designing and coding production ready templates."
+              }
+        ]},
+        "skills":{
+        "title":"المهارات التقنية",
+        "items":[
+            {
+            "icon": "terminal",
+            "title": "Languages",
+            "list": ["HTML5", "CSS3", "JavaScript/Node.js (ES)", "PHP"]
+            },
+            {
+            "icon": "options",
+            "title": "Frameworks & CMS",
+            "list": ["Express js", "Angular", "Meteor", "WordPress", "phpBB"]
+            }
+        ]}
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "en":{
+        "title": "Moaath Alattas",
+        "description": "Web Developer & Designer",
+        "logo": "https://moaathalattas.com/img/moaath-alattas.jpg",
+        "direction":"ltr",
+        "menu":[
+            {"icon":"user", "title":"About", "link":"/"},
+            {"icon":"picture", "title":"Projects", "link":"/projects"},
+            {"icon":"envelope", "title":"Contact", "link":"/contact"}
+        ]
+    },
+
+    "ar":{
+        "title": "معاذ العطاس",
+        "description": "مطور و مصمم مواقع",
+        "logo": "https://moaathalattas.com/img/moaath-alattas.jpg",
+        "direction":"rtl",
+        "menu":[
+            {"icon":"user", "title":"عنَي", "link":"/ar"},
+            {"icon":"picture", "title":"المشاريع", "link":"/ar/projects"},
+            {"icon":"envelope", "title":"تواصل معي", "link":"/ar/contact"}
+        ]
+    },
+
+    "language": "en",
+    "color": "purple"
+  }
+  

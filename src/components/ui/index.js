@@ -1,8 +1,8 @@
 import Logo from './Logo'
-import AppMenu from './Menu'
-import AppSidebar from './Sidebar'
+import Menu from './Menu'
+import Sidebar from './Sidebar'
 import SubTitle from './SubTitle'
 import ViewTitle from './ViewTitle'
-import ListEnhanced from './ListEnhanced'
+import List from './List'
 
-export { Logo, AppMenu, AppSidebar, SubTitle, ViewTitle, ListEnhanced }
+export { Logo, Menu, Sidebar, SubTitle, ViewTitle, List }
