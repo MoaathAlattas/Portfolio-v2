@@ -1,49 +1,18 @@
-import React, { Component, Fragment } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Grid } from 'semantic-ui-react'
 import { Logo, Menu } from '@components/ui'
+import { ToggleStyles, Loading } from '@components/utils'
 import config from '@data/config.json'
 
-class Main extends Component {
-  state = { loading: true }
-  loadCSS = language => {
-    //this.setState({ loading: true })
-
-    let direction = config[language].direction
-    let styleFile = direction === 'ltr' ? import('../style.css') : import('../style.rtl.css')
-    let bothLoaded = document.getElementById('rtl') && document.getElementById('ltr')
-    let linkElement = document.getElementsByTagName('link')
-
-    if (!bothLoaded) {
-      styleFile.then().catch(() => {
-        this.setState({ loading: false })
-        linkElement[linkElement.length - 1].id = direction
-      })
-      return
-    }
-    document.getElementById(direction).disabled = false
-    document.getElementById(direction === 'ltr' ? 'rtl' : 'ltr').disabled = true
-  }
-
-  componentWillMount() {
-    this.loadCSS(this.props.language)
-  }
-  componentWillUpdate(props) {
-    props.language !== this.props.language && this.loadCSS(props.language)
-  }
-
-  render() {
-    return this.state.loading ? 'Loading...' : <Layout {...this.props}>{this.props.children}</Layout>
-  }
-}
-
-// const Mainx = ({ language }) => {
-//   import(config[this.props.language].direction === 'ltr' ? '../style.css' : '../style.rtl.css').then()
-// }
-
-const Layout = ({ children, language }) => (
-  <Fragment>
+const Main = ({ children, language }) => (
+  <ToggleStyles
+    firstStyle={() => import('../style.css')}
+    secondStyle={() => import('../style.rtl.css')}
+    toggle={config[language].direction === 'ltr'}
+    loading={Loading}
+  >
     <Helmet titleTemplate={`%s - ${config[language].title}`} defaultTitle={config[language].title} />
     <Grid style={css.grid} padded>
       {/* Side Bar Column */}
@@ -57,7 +26,7 @@ const Layout = ({ children, language }) => (
         {children}
       </Grid.Column>
     </Grid>
-  </Fragment>
+  </ToggleStyles>
 )
 
 let css = {
@@ -80,3 +49,36 @@ Main.propTypes = {
 }
 
 export default Main
+
+/*
+class Main extends Component {
+  state = { loading: true }
+  loadCSS = language => {
+    let direction = config[language].direction
+    let styleFile = direction === 'ltr' ? import('../style.css') : import('../style.rtl.css')
+    let bothLoaded = document.getElementById('rtl') && document.getElementById('ltr')
+    let linkElement = document.getElementsByTagName('link')
+
+    if (!bothLoaded) {
+      styleFile.then().catch(() => {
+        this.setState({ loading: false })
+        linkElement[linkElement.length - 1].id = direction
+      })
+      return
+    }
+    document.getElementById(direction).disabled = false
+    document.getElementById(direction === 'ltr' ? 'rtl' : 'ltr').disabled = true
+  }
+
+  componentDidMount() {
+    this.loadCSS(this.props.language)
+  }
+  componentWillUpdate(props) {
+    props.language !== this.props.language && this.loadCSS(props.language)
+  }
+
+  render() {
+    return this.state.loading ? 'Loading...' : <Layout {...this.props}>{this.props.children}</Layout>
+  }
+}
+*/
