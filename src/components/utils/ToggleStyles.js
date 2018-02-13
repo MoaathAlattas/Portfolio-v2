@@ -43,10 +43,3 @@ ToggleStyles.propTypes = {
 }
 
 export default ToggleStyles
-
-{
-  /* 
-<ToggleStyles firstStyle={()=>import('s1')} secondStyle={()=>import('s2')} toggle={true} loading={component}>
-</ToggleStyles> 
-*/
-}
