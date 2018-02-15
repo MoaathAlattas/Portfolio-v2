@@ -24,9 +24,12 @@
             "./"
           ],
           "alias": {
+            "@modules": "./node_modules",
+            "@root": "./src/",
             "@components": "./src/components",
             "@layouts": "./src/layouts",
             "@views": "./src/views",
+            "@styles": "./src/styles/",
             "@data": "./data/"
           }
         }

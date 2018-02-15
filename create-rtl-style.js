@@ -4,7 +4,9 @@ const smartImport = require('postcss-smart-import')
 const url = require('postcss-url')
 const rtlcss = require('rtlcss')
 
-const css = fs.readFileSync('src/style.css', 'utf8')
+const STYLES_PATH = './src/styles'
+
+const css = fs.readFileSync(STYLES_PATH + '/style.css', 'utf8')
 
 postcss()
   .use(smartImport())
@@ -14,5 +16,5 @@ postcss()
     })
   )
   .use(rtlcss())
-  .process(css, { from: 'src/style.css', to: 'src/style.rtl.css' })
-  .then(result => fs.writeFileSync('src/style.rtl.css', result.css))
+  .process(css, { from: STYLES_PATH + '/style.css', to: STYLES_PATH + '/style.rtl.css' })
+  .then(result => fs.writeFileSync(STYLES_PATH + '/style.rtl.css', result.css))

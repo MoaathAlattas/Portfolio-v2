@@ -1,0 +1,25 @@
+@import './semantic-ui.css';
+
+body {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    direction:ltr;
+}
+
+/* menu icon position to left */
+.ui.vertical.menu .item > i.icon {
+    float: none;
+    margin: 0em 0.35714286em 0em 0em;
+}
+
+/* list padding */
+.ui.list > .item > .icon + .content {
+    padding: 0;
+}
+
+.view-content{
+    padding: 10px;
+}

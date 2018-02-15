@@ -8,8 +8,8 @@ import config from '@data/config.json'
 
 const Main = ({ children, language }) => (
   <ToggleStyles
-    firstStyle={() => import('../style.css')}
-    secondStyle={() => import('../style.rtl.css')}
+    firstStyle={() => import('@styles/style.css')}
+    secondStyle={() => import('@styles/style.rtl.css')}
     toggle={config[language].direction === 'ltr'}
     loading={Loading}
   >
