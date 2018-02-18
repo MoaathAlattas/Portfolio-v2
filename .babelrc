@@ -13,10 +13,6 @@
       "react"
     ],
     "plugins": [
-      ["transform-react-loadable", {
-      "server": false, 
-      "webpack": false
-    }],
       "transform-class-properties",
       "transform-object-rest-spread",
       ["module-resolver",{
@@ -31,9 +27,6 @@
             "@styles": "./src/styles/",
             "@data": "./data/"
           }
-        }],
-        ["lodash", {
-          "id": ["lodash"]
         }],
       "react-hot-loader/babel"
     ],
