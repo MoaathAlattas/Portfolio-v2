@@ -17,10 +17,7 @@ class ToggleStyles extends Component {
           this.setState({ loading: false })
           linkElement[linkElement.length - 1].id = id
         })
-        .catch(() => {
-          this.setState({ loading: false })
-          linkElement[linkElement.length - 1].id = id
-        })
+        .catch(() => {})
       return
     }
     document.getElementById(id).disabled = false

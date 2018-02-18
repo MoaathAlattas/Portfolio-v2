@@ -11,7 +11,7 @@ const ContactView = () => (
     <div>
       <ViewTitle content="Contact" />
       <div className="ui segment">
-        <ContactForm />
+        <ContactForm items={{}} />
       </div>
     </div>
   </Fragment>

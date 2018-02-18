@@ -12,12 +12,12 @@ const ContactView = Loadable({ loader: () => import('@views/Contact.view'), load
 const Routes = () => (
   <Switch>
     <RouteEnhanced exact path="/" component={AboutView} layout={MainLayout} />
-    <RouteEnhanced path="/projects" component={ProjectsView} layout={MainLayout} />
-    <RouteEnhanced path="/contact" component={ContactView} layout={MainLayout} />
+    <RouteEnhanced exact path="/projects" component={ProjectsView} layout={MainLayout} />
+    <RouteEnhanced exact path="/contact" component={ContactView} layout={MainLayout} />
 
     <RouteEnhanced exact path="/ar" component={AboutView} layout={MainLayout} language="ar" direction="rtl" />
-    <RouteEnhanced path="/ar/projects" component={ProjectsView} layout={MainLayout} language="ar" direction="rtl" />
-    <RouteEnhanced path="/ar/contact" component={ContactView} layout={MainLayout} language="ar" direction="rtl" />
+    <RouteEnhanced exact path="/ar/projects" component={ProjectsView} layout={MainLayout} language="ar" direction="rtl" />
+    <RouteEnhanced exact path="/ar/contact" component={ContactView} layout={MainLayout} language="ar" direction="rtl" />
   </Switch>
 )
 

@@ -15,7 +15,9 @@ const Main = ({ children, language }) => (
     toggle={config[language].direction === 'ltr'}
     loading={Loading}
   >
-    <Helmet titleTemplate={`%s - ${config[language].title}`} defaultTitle={config[language].title} />
+    <Helmet titleTemplate={`%s - ${config[language].title}`} defaultTitle={config[language].title}>
+      <html lang={language} />
+    </Helmet>
     <div style={css.grid} className="ui padded grid">
       <div
         className={`${config.color} five wide computer four wide large screen sixteen wide mobile five wide tablet three wide widescreen column`}
