@@ -1,8 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { Logo, Menu } from '@components/ui'
-import { ToggleStyles, Loading } from '@components/utils'
+import Menu from '@components/ui/Menu'
+import Logo from '@components/ui/Logo'
+import ToggleStyles from '@components/utils/ToggleStyles'
+import Loading from '@components/utils/Loading'
 import config from '@data/config.json'
 import logo from '@images/moaath-alattas.jpg'
 

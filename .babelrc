@@ -6,14 +6,17 @@
           "Chrome >= 52",
           "FireFox >= 44",
           "Safari >= 7",
-          "Explorer 11",
+          "Explorer 10",
           "last 4 Edge versions"
-        ]},
-      "useBuiltIns":true
+        ]}
     }],
       "react"
     ],
     "plugins": [
+      ["transform-react-loadable", {
+      "server": false, 
+      "webpack": false
+    }],
       "transform-class-properties",
       "transform-object-rest-spread",
       ["module-resolver",{

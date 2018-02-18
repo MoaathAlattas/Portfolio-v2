@@ -12,11 +12,15 @@ class ToggleStyles extends Component {
     let linkElement = document.getElementsByTagName('link')
 
     if (!bothLoaded) {
-      styleFile.then().catch(err => {
-        console.log(err)
-        this.setState({ loading: false })
-        linkElement[linkElement.length - 1].id = id
-      })
+      styleFile
+        .then(() => {
+          this.setState({ loading: false })
+          linkElement[linkElement.length - 1].id = id
+        })
+        .catch(() => {
+          this.setState({ loading: false })
+          linkElement[linkElement.length - 1].id = id
+        })
       return
     }
     document.getElementById(id).disabled = false

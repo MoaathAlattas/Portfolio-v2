@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
-import { ViewTitle } from '@components/ui'
-import { ContactForm } from '@components'
+import ViewTitle from '@components/ui/ViewTitle'
+import ContactForm from '@components/ContactForm'
 
 const ContactView = () => (
   <Fragment>

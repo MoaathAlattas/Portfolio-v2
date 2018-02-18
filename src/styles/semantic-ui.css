@@ -1,16 +1,12 @@
 /* @import '../../node_modules/semantic-ui-css/components/site.css'; */
-@import '../../node_modules/semantic-ui-css/components/reset.css';
-
 /*@import '../../node_modules/semantic-ui-css/components/transition.css';
 /*@import '../../node_modules/semantic-ui-css/components/form.css';*/
 /*@import '../../node_modules/semantic-ui-css/components/label.css';*/
-
-@import '../../node_modules/semantic-ui-css/components/icon.css'; 
-
-@import '../../node_modules/semantic-ui-css/components/grid.css';
-
-@import '../../node_modules/semantic-ui-css/components/menu.css';
-@import '../../node_modules/semantic-ui-css/components/segment.css';
+/* @import '../../node_modules/semantic-ui-css/components/icon.css';*/
 /* @import '../../node_modules/semantic-ui-css/components/button.css'; */
 
+@import '../../node_modules/semantic-ui-css/components/reset.css';
+@import '../../node_modules/semantic-ui-css/components/grid.css';
+@import '../../node_modules/semantic-ui-css/components/menu.css';
+@import '../../node_modules/semantic-ui-css/components/segment.css';
 @import '../../node_modules/semantic-ui-css/components/list.css';

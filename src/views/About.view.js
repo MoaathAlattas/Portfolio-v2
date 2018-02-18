@@ -1,7 +1,9 @@
 import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
 import PropTypes from 'prop-types'
-import { ViewTitle, SubTitle, List } from '@components/ui'
+import ViewTitle from '@components/ui/ViewTitle'
+import SubTitle from '@components/ui/SubTitle'
+import List from '@components/ui/List'
 import aboutData from '@data/about.json'
 
 const AboutView = ({ language }) => (
