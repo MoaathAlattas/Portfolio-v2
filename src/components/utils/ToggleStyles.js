@@ -12,7 +12,8 @@ class ToggleStyles extends Component {
     let linkElement = document.getElementsByTagName('link')
 
     if (!bothLoaded) {
-      styleFile.then().catch(() => {
+      styleFile.then().catch(err => {
+        console.log(err)
         this.setState({ loading: false })
         linkElement[linkElement.length - 1].id = id
       })
@@ -22,7 +23,7 @@ class ToggleStyles extends Component {
     document.getElementById(id === 'ToggleStylesFirst' ? 'ToggleStylesSecond' : 'ToggleStylesFirst').disabled = true
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.loadStyle(this.props.toggle)
   }
   componentWillUpdate(props) {

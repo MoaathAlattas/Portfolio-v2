@@ -1,10 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Image } from 'semantic-ui-react'
 
 const Logo = ({ img, name, jobTitle }) => (
   <div style={{ textAlign: 'center' }}>
-    {img && <Image src={img} style={css.img} size="small" centered spaced circular />}
+    {img && <img src={img} style={css.img} />}
     <div style={css.nameTitleWrapper}>
       <h1 style={css.name}>{name}</h1>
       <h4 style={css.jobTitle}>{jobTitle}</h4>
@@ -14,7 +13,17 @@ const Logo = ({ img, name, jobTitle }) => (
 
 let css = {
   img: {
-    margin: '7px'
+    width: '150px',
+    height: 'auto',
+    borderRadius: '500rem',
+    position: 'relative',
+    verticalAlign: 'middle',
+    maxWidth: '100%',
+    backgroundColor: 'transparent',
+    display: 'inline-block',
+    marginTop: '7px',
+    marginLeft: '0.5em',
+    marginRight: '0.5em'
   },
   nameTitleWrapper: {
     margin: '7px',

@@ -1,38 +1,45 @@
 {
     "presets": [
-      "env",
+      ["env", {
+      "targets": {
+        "browsers": [
+          "Chrome >= 52",
+          "FireFox >= 44",
+          "Safari >= 7",
+          "Explorer 11",
+          "last 4 Edge versions"
+        ]},
+      "useBuiltIns":true
+    }],
       "react"
     ],
     "plugins": [
-      "syntax-dynamic-import",
       "transform-class-properties",
-      "react-hot-loader/babel",
       "transform-object-rest-spread",
-      [
-        "lodash",
-        {
-          "id": [
-            "lodash",
-            "semantic-ui-react"
-          ]
-        }
-      ],
-      [
-        "module-resolver",
-        {
-          "root": [
-            "./"
-          ],
+      ["module-resolver",{
+          "root": ["./"],
           "alias": {
             "@modules": "./node_modules",
             "@root": "./src/",
+            "@images": "./src/images",
             "@components": "./src/components",
             "@layouts": "./src/layouts",
             "@views": "./src/views",
             "@styles": "./src/styles/",
             "@data": "./data/"
           }
-        }
+        }],
+        ["lodash", {
+          "id": ["lodash"]
+        }],
+      "react-hot-loader/babel"
+    ],
+  "env": {
+    "production": {
+      "plugins": [
+        "transform-react-remove-prop-types",
+        "transform-react-constant-elements"
       ]
-    ]
+    }
+  }
   }

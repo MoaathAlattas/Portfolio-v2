@@ -1,55 +1,52 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { List, Icon, Segment } from 'semantic-ui-react'
 
 const ListEnhanced = ({ items, type }) => {
   if (type === 1) {
     return (
-      <List divided relaxed="very">
+      <div role="list" className="ui divided very relaxed list">
         {items.map((item, i) => (
-          <List.Item key={i}>
-            <Icon name={item.icon} size="big" />
-            <List.Content>
-              <List.Header>{item.title}</List.Header>
-              <List.Description>{item.description}</List.Description>
-            </List.Content>
-          </List.Item>
+          <div key={i} role="listitem" className="item">
+            <i aria-hidden="true" className={`${item.icon} big icon`} />
+            <div className="content">
+              <div className="header">{item.title}</div>
+              <div className="description">{item.description}</div>
+            </div>
+          </div>
         ))}
-      </List>
+      </div>
     )
   } else if (type === 2) {
     return (
-      <List divided relaxed="very">
+      <div role="list" className="ui divided very relaxed list">
         {items.map((item, i) => (
-          <List.Item key={i}>
-            <List.Content>
-              <List.Header>
-                <Icon name={item.icon} />
+          <div key={i} role="listitem" className="item">
+            <div className="content">
+              <div className="header">
+                <i aria-hidden="true" className={`${item.icon} icon`} />
                 {item.title}
-              </List.Header>
-              <List.Description>{item.description}</List.Description>
-            </List.Content>
-          </List.Item>
+              </div>
+              <div className="description">{item.description}</div>
+            </div>
+          </div>
         ))}
-      </List>
+      </div>
     )
   } else if (type === 3) {
     return (
-      <List horizontal>
+      <div role="list" className="ui horizontal list">
         {items.map((item, i) => (
-          <List.Item key={i}>
-            <List.Content>
-              <List.Header>
-                <Icon name={item.icon} />
+          <div key={i} role="listitem" className="item">
+            <div className="content">
+              <div className="header">
+                <i aria-hidden="true" className={`${item.icon} icon`} />
                 {item.title}
-              </List.Header>
-              <Segment>
-                <List items={item.list} />
-              </Segment>
-            </List.Content>
-          </List.Item>
+              </div>
+              <div className="ui segment">{/* <List items={item.list} /> */}</div>
+            </div>
+          </div>
         ))}
-      </List>
+      </div>
     )
   }
   return null

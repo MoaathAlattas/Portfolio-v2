@@ -1,6 +1,5 @@
 import React, { Fragment } from 'react'
 import Helmet from 'react-helmet'
-import { Segment } from 'semantic-ui-react'
 import { ViewTitle } from '@components/ui'
 import { Project } from '@components'
 
@@ -11,9 +10,9 @@ const ProjectsView = () => (
     </Helmet>
     <div>
       <ViewTitle content="Projects" />
-      <Segment>
+      <div className="ui segment">
         <Project items={{}} />
-      </Segment>
+      </div>
     </div>
   </Fragment>
 )

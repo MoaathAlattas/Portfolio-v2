@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react'
 import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
-import { Menu, Responsive, Button } from 'semantic-ui-react'
+import Menu from 'semantic-ui-react/dist/es/collections/Menu'
+import Responsive from 'semantic-ui-react/dist/es/addons/Responsive'
 
 class AppMenu extends React.Component {
   state = {
@@ -19,18 +20,23 @@ class AppMenu extends React.Component {
     return (
       <Responsive onUpdate={this.onScreenSizeUpdate} fireOnMount as={Fragment}>
         <Responsive {...Responsive.onlyMobile} as={Fragment}>
-          <Button icon="list" onClick={this.onToggle} style={css.menuButton} />
+          <button className="ui icon button" role="button" onClick={this.onToggle} style={css.menuButton}>
+            <i aria-hidden="true" className="list icon" />
+          </button>
         </Responsive>
 
         {this.state.open && (
-          <Menu vertical compact fluid color={this.props.color} inverted>
+          <div className={`ui ${this.props.color} compact fluid inverted vertical menu`}>
             {this.props.items.map((item, i) => (
-              <Menu.Item key={i} name={item.title} content={item.title} icon={item.icon} to={item.link} as={Link} />
+              <Link className="item" key={i} to={item.link}>
+                <i aria-hidden="true" className={`${item.icon} icon`} />
+                {item.title}
+              </Link>
             ))}
 
             <Menu.Item content="عربي" as={Link} to="/ar" />
             <Menu.Item content="English" as={Link} to="/" />
-          </Menu>
+          </div>
         )}
       </Responsive>
     )

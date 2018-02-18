@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { Grid } from 'semantic-ui-react'
 import { Logo, Menu } from '@components/ui'
 import { ToggleStyles, Loading } from '@components/utils'
 import config from '@data/config.json'
+import logo from '@images/moaath-alattas.jpg'
 
 const Main = ({ children, language }) => (
   <ToggleStyles
@@ -14,18 +14,22 @@ const Main = ({ children, language }) => (
     loading={Loading}
   >
     <Helmet titleTemplate={`%s - ${config[language].title}`} defaultTitle={config[language].title} />
-    <Grid style={css.grid} padded>
-      {/* Side Bar Column */}
-      <Grid.Column mobile={16} tablet={5} computer={5} largeScreen={4} widescreen={3} style={css.ColumnSideBar} color={config.color}>
-        <Logo name={config[language].title} jobTitle={config[language].description} img={config[language].logo} />
+    <div style={css.grid} className="ui padded grid">
+      <div
+        className={`${config.color} five wide computer four wide large screen sixteen wide mobile five wide tablet three wide widescreen column`}
+        style={css.ColumnSideBar}
+      >
+        <Logo name={config[language].title} jobTitle={config[language].description} img={logo} />
         <Menu color={config.color} items={config[language].menu} />
-      </Grid.Column>
+      </div>
 
-      {/* Content Column */}
-      <Grid.Column mobile={16} tablet={11} computer={11} largeScreen={12} widescreen={13} style={css.ColumnContent}>
+      <div
+        className="eleven wide computer twelve wide large screen sixteen wide mobile eleven wide tablet thirteen wide widescreen column"
+        style={css.ColumnContent}
+      >
         {children}
-      </Grid.Column>
-    </Grid>
+      </div>
+    </div>
   </ToggleStyles>
 )
 

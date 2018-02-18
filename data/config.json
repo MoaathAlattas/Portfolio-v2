@@ -2,7 +2,7 @@
     "en":{
         "title": "Moaath Alattas",
         "description": "Web Developer & Designer",
-        "logo": "https://moaathalattas.com/img/moaath-alattas.jpg",
+        "logo": "/images/moaath-alattas.jpg",
         "direction":"ltr",
         "menu":[
             {"icon":"user", "title":"About", "link":"/"},
@@ -14,7 +14,7 @@
     "ar":{
         "title": "معاذ العطاس",
         "description": "مطور و مصمم مواقع",
-        "logo": "https://moaathalattas.com/img/moaath-alattas.jpg",
+        "logo": "/images/moaath-alattas.jpg",
         "direction":"rtl",
         "menu":[
             {"icon":"user", "title":"عنَي", "link":"/ar"},
