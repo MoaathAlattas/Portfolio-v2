@@ -1,2 +1,2 @@
-import 'promise-polyfill/src/polyfill'
-require('es6-object-assign').polyfill()
+import 'core-js/es6/promise'
+import 'core-js/es6/object'

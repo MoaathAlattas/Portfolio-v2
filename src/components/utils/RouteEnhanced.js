@@ -4,7 +4,7 @@ import Route from 'react-router-dom/Route'
 import config from '@data/config.json'
 
 const RouteEnhanced = ({ layout: Layout, component: Component, language, ...props }) => (
-  <Layout language={language}>
+  <Layout language={language} {...props}>
     <Route render={routeProps => <Component {...routeProps} language={language} />} {...props} />
   </Layout>
 )

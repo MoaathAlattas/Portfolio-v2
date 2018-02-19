@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import ViewTitle from '@components/ui/ViewTitle'
 import ContactForm from '@components/ContactForm'
 
-const ContactView = () => (
+const View = () => (
   <Fragment>
     <Helmet>
       <title>Contact</title>
@@ -17,4 +17,4 @@ const ContactView = () => (
   </Fragment>
 )
 
-export default ContactView
+export default View

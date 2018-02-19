@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const Logo = ({ img, name, jobTitle }) => (
   <div style={{ textAlign: 'center' }}>
-    {img && <img src={img} style={css.img} alt={name} />}
+    {/* {img && <img src={img} style={css.img} alt={name} />} */}
     <div style={css.nameTitleWrapper}>
       <h1 style={css.name}>{name}</h1>
       <h4 style={css.jobTitle}>{jobTitle}</h4>

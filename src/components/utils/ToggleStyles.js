@@ -22,6 +22,7 @@ class ToggleStyles extends Component {
     }
     document.getElementById(id).disabled = false
     document.getElementById(id === 'ToggleStylesFirst' ? 'ToggleStylesSecond' : 'ToggleStylesFirst').disabled = true
+    this.setState({ loading: false })
   }
 
   componentWillMount() {

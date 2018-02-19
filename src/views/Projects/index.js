@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import ViewTitle from '@components/ui/ViewTitle'
 import Project from '@components/Project'
 
-const ProjectsView = () => (
+const View = () => (
   <Fragment>
     <Helmet>
       <title>Projects</title>
@@ -17,4 +17,4 @@ const ProjectsView = () => (
   </Fragment>
 )
 
-export default ProjectsView
+export default View

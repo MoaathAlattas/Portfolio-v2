@@ -1,0 +1,38 @@
+{
+    "en":{
+        "title":"Projects",
+        "projects":{
+            "items":[
+            {
+                "id":0,
+                "title":"",
+                "description":"",
+                "summary":"",
+                "modal":false,
+                "details":[
+                    {
+                        "title":"Type",
+                        "items":[{},{}]
+                    },
+                    {
+                        "title":"Languages",
+                        "items":[
+                            {"title":"","color":""},
+                            {"title":"","color":""}
+                        ]
+                    }
+                    ],
+                "links":[
+                    {"icon":"", "title":"", "link":""},
+                    {"icon":"", "title":"", "link":""}
+                ]
+            }
+        ]
+        }
+
+    },
+
+    "ar":{
+        
+    }
+}

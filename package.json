@@ -10,17 +10,15 @@
   "author": "Moaath Alattas",
   "license": "ISC",
   "dependencies": {
-    "babel-polyfill": "^6.26.0",
-    "es6-object-assign": "^1.1.0",
-    "promise-polyfill": "^7.1.0",
+    "bootstrap": "^4.0.0",
+    "core-js": "^2.5.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-helmet": "^5.2.0",
     "react-loadable": "^5.3.1",
     "react-router-dom": "^4.2.2",
-    "regenerator-runtime": "^0.11.1",
-    "semantic-ui-css": "^2.2.12",
-    "semantic-ui-react": "^0.77.2"
+    "reactstrap": "^5.0.0-beta",
+    "semantic-ui-css": "^2.2.12"
   },
   "devDependencies": {
     "babel-plugin-lodash": "^3.3.2",
@@ -32,6 +30,7 @@
     "babel-plugin-transform-react-remove-prop-types": "^0.4.13",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "node-sass": "^4.7.2",
     "parcel-bundler": "^1.6.1",
     "postcss": "^6.0.17",
     "postcss-modules": "^1.1.0",

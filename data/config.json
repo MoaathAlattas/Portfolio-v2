@@ -5,7 +5,7 @@
         "logo": "/images/moaath-alattas.jpg",
         "direction":"ltr",
         "menu":[
-            {"icon":"user", "title":"About", "link":"/"},
+            {"icon":"user", "title":"About", "link":"/about"},
             {"icon":"picture", "title":"Projects", "link":"/projects"},
             {"icon":"envelope", "title":"Contact", "link":"/contact"}
         ]
@@ -17,7 +17,7 @@
         "logo": "/images/moaath-alattas.jpg",
         "direction":"rtl",
         "menu":[
-            {"icon":"user", "title":"عنَي", "link":"/ar"},
+            {"icon":"user", "title":"عنَي", "link":"/ar/about"},
             {"icon":"picture", "title":"المشاريع", "link":"/ar/projects"},
             {"icon":"envelope", "title":"تواصل معي", "link":"/ar/contact"}
         ]
