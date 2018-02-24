@@ -1,12 +1,31 @@
 {
     "en":{
-        "name":"",
-        "email":"",
-        "message":""
+        "contactForm":{
+            "name":{"title":"Name", "placeholder":"Enter your name"},
+            "email":{"title":"Email", "placeholder":"Enter your email"},
+            "message":{"title":"Message", "placeholder":"Enter your message"},
+            "submit":{"title":"Submit"},
+            "success":"",
+            "error":""
+
+        },
+        "formErrors":{
+                "emptyInput":"This feild is reqired",
+                "invalidEmail":"Invalid email"
+            }
     },
     "ar":{
-        "name":"",
-        "email":"",
-        "message":""
+        "contactForm":{
+            "name":{"title":"الاسم", "placeholder":"أدخل اسمك"},
+            "email":{"title":"البريد اللإلكتروني", "placeholder":"أدخل البريد الإلكتروني"},
+            "message":{"title":"الرسالة", "placeholder":"أدخل الرسالة"},
+            "submit":{"title":"إرسال"},
+            "success":"",
+            "error":""
+        },
+        "formErrors":{
+                "emptyInput":"هذا الحقل اجباري",
+                "invalidEmail":"البريد الإلكتروني غير صحيح"
+        }
     }
 }

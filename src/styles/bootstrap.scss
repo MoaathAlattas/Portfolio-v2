@@ -34,20 +34,20 @@
     @import "../../node_modules/bootstrap/scss/mixins/_float";
 
 //Utilities
-    @import "../../node_modules/bootstrap/scss/utilities/_align";
-    @import "../../node_modules/bootstrap/scss/utilities/_background";
-    @import "../../node_modules/bootstrap/scss/utilities/_borders";
-    @import "../../node_modules/bootstrap/scss/utilities/_clearfix";
-    @import "../../node_modules/bootstrap/scss/utilities/_display";
-    @import "../../node_modules/bootstrap/scss/utilities/_embed";
-    @import "../../node_modules/bootstrap/scss/utilities/_flex";
-    @import "../../node_modules/bootstrap/scss/utilities/_float";
-    @import "../../node_modules/bootstrap/scss/utilities/_position";
-    @import "../../node_modules/bootstrap/scss/utilities/_screenreaders";
-    @import "../../node_modules/bootstrap/scss/utilities/_sizing";
-    @import "../../node_modules/bootstrap/scss/utilities/_spacing";
-    @import "../../node_modules/bootstrap/scss/utilities/_text";
-    @import "../../node_modules/bootstrap/scss/utilities/_visibility";
+    // @import "../../node_modules/bootstrap/scss/utilities/_align";
+    // @import "../../node_modules/bootstrap/scss/utilities/_background";
+    // @import "../../node_modules/bootstrap/scss/utilities/_borders";
+    // @import "../../node_modules/bootstrap/scss/utilities/_clearfix";
+    // @import "../../node_modules/bootstrap/scss/utilities/_display";
+    // @import "../../node_modules/bootstrap/scss/utilities/_embed";
+    // @import "../../node_modules/bootstrap/scss/utilities/_flex";
+    // @import "../../node_modules/bootstrap/scss/utilities/_float";
+    // @import "../../node_modules/bootstrap/scss/utilities/_position";
+    // @import "../../node_modules/bootstrap/scss/utilities/_screenreaders";
+    // @import "../../node_modules/bootstrap/scss/utilities/_sizing";
+    // @import "../../node_modules/bootstrap/scss/utilities/_spacing";
+    // @import "../../node_modules/bootstrap/scss/utilities/_text";
+    // @import "../../node_modules/bootstrap/scss/utilities/_visibility";
 
 @import "../../node_modules/bootstrap/scss/_root";
 @import "../../node_modules/bootstrap/scss/_reboot";
@@ -70,11 +70,11 @@
 // @import "../../node_modules/bootstrap/scss/_pagination";
 // @import "../../node_modules/bootstrap/scss/_badge";
 // @import "../../node_modules/bootstrap/scss/_jumbotron";
-// @import "../../node_modules/bootstrap/scss/_alert";
+@import "../../node_modules/bootstrap/scss/_alert";
 // @import "../../node_modules/bootstrap/scss/_progress";
 // @import "../../node_modules/bootstrap/scss/_media";
 // @import "../../node_modules/bootstrap/scss/_list-group";
-// @import "../../node_modules/bootstrap/scss/_close";
+@import "../../node_modules/bootstrap/scss/_close";
 // @import "../../node_modules/bootstrap/scss/_modal";
 // @import "../../node_modules/bootstrap/scss/_tooltip";
 // @import "../../node_modules/bootstrap/scss/_popover";

@@ -59,36 +59,3 @@ Layout.propTypes = {
 }
 
 export default Layout
-
-/*
-class Main extends Component {
-  state = { loading: true }
-  loadCSS = language => {
-    let direction = config[language].direction
-    let styleFile = direction === 'ltr' ? import('../style.css') : import('../style.rtl.css')
-    let bothLoaded = document.getElementById('rtl') && document.getElementById('ltr')
-    let linkElement = document.getElementsByTagName('link')
-
-    if (!bothLoaded) {
-      styleFile.then().catch(() => {
-        this.setState({ loading: false })
-        linkElement[linkElement.length - 1].id = direction
-      })
-      return
-    }
-    document.getElementById(direction).disabled = false
-    document.getElementById(direction === 'ltr' ? 'rtl' : 'ltr').disabled = true
-  }
-
-  componentDidMount() {
-    this.loadCSS(this.props.language)
-  }
-  componentWillUpdate(props) {
-    props.language !== this.props.language && this.loadCSS(props.language)
-  }
-
-  render() {
-    return this.state.loading ? 'Loading...' : <Layout {...this.props}>{this.props.children}</Layout>
-  }
-}
-*/
